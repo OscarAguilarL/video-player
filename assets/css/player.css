@@ -1,0 +1,54 @@
+.player {
+  margin-block-start: 100px;
+  position: relative;
+}
+
+.player-overlay {
+  position: absolute;
+  opacity: 0;
+  inset: 0;
+  transition: .5s;
+}
+
+.player:hover .player-overlay{
+  opacity: 100%;
+}
+
+.player video {
+  inline-size: 100%;
+  aspect-ratio: 16/9;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.player-title {
+  color: white;
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 20px;
+  padding-inline-start: 1rem;
+  padding-block-start: .5rem;
+  font: 400 1rem/1.25rem 'Lato';
+}
+
+.player-actions {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.player-progress {
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline: 0;
+  display: flex;
+  padding-inline-start: 3.875rem;
+  padding-inline-end: 3.875rem;
+  padding-block-end: 2rem;
+}
+
+.player-progress input {
+  flex: 1;
+}

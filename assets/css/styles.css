@@ -1,0 +1,8 @@
+@import './button.css';
+@import './buttons.css';
+@import './player.css';
+
+body {
+  background-color: #26b4bc;
+  font-family: 'Lato', sans-serif;;
+}
